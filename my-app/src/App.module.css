@@ -6,7 +6,6 @@
 }
 
 .Wrapper {
-    max-width: 300px;
     border: 1px solid gray;
 }
 .Display {
@@ -18,28 +17,30 @@
 
 .PanelButtons {
     margin: 10px;
+    display: flex;
+    gap: 10px;
+    user-select: none;
 }
 
 .Button {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 60px;
+    height: 60px;
     font-size: 50px;
     cursor: pointer;
 }
 
 .OperatorsButton {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 10px;
 }
 
 .OperatorButton {
     background-color: lightsalmon;
-    width: 60px;
-    height: 60px;
 }
 
 .NumericButtons {
@@ -53,7 +54,7 @@
     background-color: lightgray;
 }
 
-.ButtonNine {
+.ButtonZero {
     grid-column: 2 / 3;
     grid-row: 4 / 4;
 }
